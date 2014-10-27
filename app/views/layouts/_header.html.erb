@@ -7,19 +7,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Promotely</a>
+          <a class="navbar-brand" href="/">Promotely</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-          	<li><%= link_to "Home", root_path %></li>
+            
+            <% if user_signed_in? %>
+            <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Find Promotions...">
+          </form>
             <li><%= link_to "View Promotions", ads_path %></li>
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">+ New Campaign</a></li>
+            <li><%= link_to "Settings", edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to " + Login", new_user_session_path %></li>
+          <% end %>
             
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Find Promotions...">
-          </form>
+          
         </div>
       </div>
     </div>

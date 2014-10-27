@@ -1,7 +1,12 @@
 <div class="jumbotron">
       <h1> Welcome To Promotely.co</h1>
       <p>Using social influence to Increase Your Sales</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+        <% if user_signed_in? %>
+        <%= link_to "Go to Dashboard =>", "#"%>
+        <% else %>
+        <p><%= link_to "Sign Up", new_user_registration_path, class: "btn btn-success btn-lg"%>&nbsp;&nbsp;OR &nbsp;&nbsp;<%= link_to "Login Here", new_user_session_path, class: "btn btn-primary btn-lg"%> </p>
+        <% end %>
+
 </div>
 
 
