@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.2'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.8'
 gem 'devise'
 gem 'simple_form', '~> 3.0.0.rc'
 gem 'activeadmin', github: 'activeadmin'
