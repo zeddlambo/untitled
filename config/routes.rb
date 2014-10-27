@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'ads/index'
+  
 
   get 'welcome/index'
 
-  root 'ads#index'
+  root 'welcome#index'
+
+  get "ads" => "ads#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
