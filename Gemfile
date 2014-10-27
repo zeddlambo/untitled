@@ -1,40 +1,23 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
-gem 'rails', '4.0.8'
-gem 'devise'
-gem 'simple_form', '~> 3.0.0.rc'
-gem 'activeadmin', github: 'activeadmin'
-gem 'formtastic', '~> 3.0'
-gem 'responders', '~> 1.0.0'
-gem 'inherited_resources', '~> 1.4.1'
-gem 'ransack', '~> 1.5.0'
+gem 'rails',                '4.2.0.beta2'
+gem 'sass-rails',           '5.0.0.beta1'
+gem 'uglifier',             '2.5.3'
+gem 'coffee-rails',         '4.0.1'
+gem 'jquery-rails',         '4.0.0.beta2'
+gem 'turbolinks',           '2.3.0'
+gem 'jbuilder',             '2.2.3'
+gem 'rails-html-sanitizer', '1.0.1'
+gem 'sdoc',                 '0.4.0', group: :doc
 
 group :development, :test do
-    gem 'sqlite3'
+  gem 'sqlite3',     '1.3.9'
+  gem 'byebug',      '3.4.0'
+  gem 'web-console', '2.0.0.beta3'
+  gem 'spring',      '1.1.3'
 end
 
 group :production do
-    gem 'pg'
-    gem 'rails_12factor'
+  gem 'pg',             '0.17.1'
+  gem 'rails_12factor', '0.0.2'
 end
-
-gem 'sass-rails', '~> 4.0.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 1.2'
-gem 'bootstrap-sass', '~> 2.3.2.1'
-
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
-
-
-
-
