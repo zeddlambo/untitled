@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.1.2'
 
 gem 'rails', '4.0.0'
 gem 'devise'
 gem 'simple_form', '~> 3.0.0.rc'
+gem 'activeadmin', github: 'activeadmin'
 
 group :development, :test do
     gem 'sqlite3'
-    gem 'debugger'
 end
 
 group :production do
