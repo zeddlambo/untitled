@@ -6,6 +6,10 @@ gem 'rails', '4.0.0'
 gem 'devise'
 gem 'simple_form', '~> 3.0.0.rc'
 gem 'activeadmin', github: 'activeadmin'
+gem 'formtastic', '~> 3.0'
+gem 'responders', '~> 1.0.0'
+gem 'inherited_resources', '~> 1.4.1'
+gem 'ransack', '~> 1.5.0'
 
 group :development, :test do
     gem 'sqlite3'
@@ -30,3 +34,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+
+
+

@@ -180,11 +180,15 @@ DEPENDENCIES
   bootstrap-sass (~> 2.3.2.1)
   coffee-rails (~> 4.0.0)
   devise
+  formtastic (~> 3.0)
+  inherited_resources (~> 1.4.1)
   jbuilder (~> 1.2)
   jquery-rails
   pg
   rails (= 4.0.0)
   rails_12factor
+  ransack (~> 1.5.0)
+  responders (~> 1.0.0)
   sass-rails (~> 4.0.0)
   sdoc
   simple_form (~> 3.0.0.rc)
